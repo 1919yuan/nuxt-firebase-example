@@ -95,6 +95,7 @@ sw.*
 # Firebase config
 firebase.json
 *_key.*
+.firebase/
 
 # Generated static site
-/public/
+public/
