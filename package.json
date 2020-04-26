@@ -1,0 +1,43 @@
+{
+  "name": "nuxt-firebase-example",
+  "version": "1.0.0",
+  "description": "Example Nuxt Firebase integration in SSR mode with authentication, hosting, firestore and functions.",
+  "author": "Lin",
+  "private": true,
+  "scripts": {
+    "dev": "yarn install && yarn --cwd functions install && cross-env NODE_ENV=development HOST=0.0.0.0 PORT=8080 nodemon src/server/index.js --watch src/server",
+    "build": "yarn install && yarn --cwd functions install && nuxt build && rm -rf functions/.nuxt && mv .nuxt functions && rm -rf public && mkdir public && cp -r functions/.nuxt/dist/client public/_nuxt && cp -a src/static/. public/",
+    "start": "cross-env NODE_ENV=production node src/server/index.js",
+    "ssr": "firebase serve",
+    "preparedev": "cp firebase.json.development firebase.json && cp firebase_key.json.development firebase_key.json && cp .env.development .env && cp -f firebase_key.json .env functions/",
+    "prepareprod": "cp firebase.json.production firebase.json && cp firebase_key.json.production firebase_key.json && cp .env.production .env && cp -f firebase_key.json .env functions/",
+    "stage": "cp firebase.json.development firebase.json && firebase use development && firebase deploy",
+    "deploy": "cp firebase.json.production firebase.json && firebase use production && firebase deploy",
+    "clean": "rm -rf public/ node_modules/ functions/node_modules .nuxt functions/.nuxt"
+  },
+  "dependencies": {
+    "@nuxtjs/axios": "^5.10.1",
+    "@nuxtjs/firebase": "^5.0.7",
+    "cookie": "^0.4.1",
+    "cookie-universal-nuxt": "^2.1.3",
+    "core-js": "2.6.10",
+    "cross-env": "^5.2.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.16.4",
+    "firebase": "^7.14.2",
+    "firebase-admin": "^8.11.0",
+    "jwt-decode": "^2.2.0",
+    "nuxt": "^2.12.2",
+    "nuxt-buefy": "^0.3.28"
+  },
+  "devDependencies": {
+    "@nuxtjs/eslint-config": "^2.0.2",
+    "@nuxtjs/eslint-module": "^1.2.0",
+    "eslint": "^6.8.0",
+    "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-json": "^2.1.1",
+    "eslint-plugin-nuxt": "^0.5.2",
+    "eslint-plugin-vue": "^6.2.2",
+    "nodemon": "^1.18.9"
+  }
+}
