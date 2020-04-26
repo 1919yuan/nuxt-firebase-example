@@ -38,9 +38,15 @@ $ yarn clean
 
 ## References
 
-[1]: [Using Firebase Authentication in a Nuxt Server-side Rendered Application](https://levelup.gitconnected.com/using-firebase-authentication-in-a-nuxt-server-side-rendered-application-c2a624a9e999)
-[2]: [Nuxt Firebase](https://firebase.nuxtjs.org/)
-[3]: [Vue.js/Nuxt on Firebase hosting](https://www.youtube.com/watch?v=ZYUWsjUxxUQ)
-[4]: [Deploy nuxt on Firebase](https://dev.to/kiritchoukc/deploy-nuxt-on-firebase-4ad8)
-[5]: [How to host Nuxt.js application on firebase with a single command](https://dev.to/slushnys/how-to-host-nuxt-js-application-on-firebase-with-a-single-command-1nio)
-[6]: [williamchong007/nuxt-ssr-firebase](https://github.com/williamchong007/nuxt-ssr-firebase)
+* [Using Firebase Authentication in a Nuxt Server-side Rendered Application](https://levelup.gitconnected.com/using-firebase-authentication-in-a-nuxt-server-side-rendered-application-c2a624a9e999)
+  This repo is mostly an example repo for this article, where Austin didn't publish one. Thanks for the code and tutorial, Austin!
+
+* [Nuxt Firebase](https://firebase.nuxtjs.org/)
+
+* [Vue.js/Nuxt on Firebase hosting](https://www.youtube.com/watch?v=ZYUWsjUxxUQ)
+
+* [Deploy nuxt on Firebase](https://dev.to/kiritchoukc/deploy-nuxt-on-firebase-4ad8)
+
+* [How to host Nuxt.js application on firebase with a single command](https://dev.to/slushnys/how-to-host-nuxt-js-application-on-firebase-with-a-single-command-1nio)
+
+* [williamchong007/nuxt-ssr-firebase](https://github.com/williamchong007/nuxt-ssr-firebase)
